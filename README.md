@@ -15,25 +15,37 @@ A lightweight, installation-free Markdown editor supporting 10 languages, 1300+ 
 
 ## macOS Installation / macOS 安装说明
 
-The macOS app is ad-hoc signed (not notarized), so Gatekeeper may block it on first launch.
+The macOS app is ad-hoc signed (not notarized), so Gatekeeper blocks it. Follow the steps below.
 
-**中文：** 下载 DMG 后，将 Mard.app 拖入 Applications 文件夹。首次双击运行时若提示「文件已损坏」或「无法验证开发者」，请在终端执行：
-
-```bash
-xattr -cr /Applications/Mard.app
-```
-
-然后重新双击运行即可。或右键点击 app →「打开」→ 确认打开。
-
-**English:** After downloading the DMG, drag Mard.app to your Applications folder. If macOS shows "Mard is damaged and can't be opened" or "cannot verify the developer", run this in Terminal:
+**中文：**
+1. 下载 DMG → 挂载 → 将 Mard.app 拖入「应用程序」文件夹
+2. 打开终端（Terminal），依次执行以下 3 条命令：
 
 ```bash
 xattr -cr /Applications/Mard.app
+codesign --force --deep --sign - /Applications/Mard.app
+open /Applications/Mard.app
 ```
 
-Then double-click to launch. Alternatively, right-click the app → Open → confirm.
+3. 首次通过 `open` 命令启动后，以后双击即可正常运行。
 
-> **Why?** The app uses ad-hoc code signing (free). A paid Apple Developer account ($99/year) is needed for notarization. The `xattr -cr` command removes the quarantine flag that macOS attaches to internet-downloaded files.
+> 若提示 `codesign: command not found`，需先安装 Xcode Command Line Tools：`xcode-select --install`
+
+**English:**
+1. Download the DMG → mount → drag Mard.app to Applications
+2. Open Terminal and run these 3 commands:
+
+```bash
+xattr -cr /Applications/Mard.app
+codesign --force --deep --sign - /Applications/Mard.app
+open /Applications/Mard.app
+```
+
+3. After the first launch via `open`, double-click will work from then on.
+
+> If you see `codesign: command not found`, install Xcode Command Line Tools first: `xcode-select --install`
+
+> **Why?** The app uses ad-hoc code signing (free). A paid Apple Developer account ($99/year) is needed for notarization. On macOS Sequoia, `xattr -cr` alone is insufficient — the app must be re-signed locally to pass Gatekeeper.
 
 ---
 
