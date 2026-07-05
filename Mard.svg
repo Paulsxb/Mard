@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_图层_1" data-name="图层_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512">
+  <!-- Generator: Adobe Illustrator 29.6.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 207)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+      }
+
+      .st1 {
+        fill: #8d5c24;
+      }
+
+      .st1, .st2, .st3, .st4 {
+        fill-rule: evenodd;
+      }
+
+      .st2 {
+        fill: #e68341;
+      }
+
+      .st5 {
+        fill: #cd7a2b;
+      }
+
+      .st3 {
+        fill: #68431e;
+      }
+
+      .st6 {
+        fill: #b8731d;
+      }
+
+      .st4 {
+        fill: #bb761b;
+      }
+    </style>
+  </defs>
+  <path id="Block04" class="st2" d="M159.77,34.67h321.34c10.4,0,18.83,8.43,18.83,18.83v94.17H140.94V53.5c0-10.4,8.43-18.83,18.83-18.83Z"/>
+  <path id="Block03" class="st1" d="M481.11,476.67H159.77c-10.4,0-18.83-8.43-18.83-18.83v-94.17h359v94.17c0,10.4-8.43,18.83-18.83,18.83Z"/>
+  <rect id="Block02" class="st5" x="140.94" y="147.67" width="359" height="108"/>
+  <rect id="Block01" class="st6" x="140.94" y="255.67" width="359" height="108"/>
+  <path id="shadow" class="st3" d="M140.94,138.67h101.64c14.56,0,26.36,11.82,26.36,26.41v196.18c0,14.58-11.8,26.41-26.36,26.41h-101.64v-249Z"/>
+  <path id="icon" class="st4" d="M11.94,157.18c0-14.64,11.87-26.52,26.52-26.52h196.97c14.64,0,26.52,11.87,26.52,26.52v196.97c0,14.64-11.87,26.52-26.52,26.52H38.45c-14.64,0-26.52-11.87-26.52-26.52v-196.97Z"/>
+  <path id="M" class="st0" d="M207.06,322.56h-34.32v-89.57l-24.8,58.13h-23.81l-24.8-58.13v89.57h-32.52v-133.78h40.07l30.1,67.11,30.01-67.11h40.07v133.78Z"/>
+</svg>
