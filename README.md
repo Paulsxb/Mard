@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Paulsxb/Mard/main/Mard.svg" width=400/>
+    <img src="Mard.svg" width=400/>
 </p>
 <h1 align="center">Mard</h1>  
 <p align="center"><strong>Salute to Word, ultra lightweight and installation free Markdown file editor - Mard </strong>
@@ -36,5 +36,5 @@
 <br>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Paulsxb/Mard/main/DEMO.png" width=100%/>
+    <img src="DEMO.png" width=100%/>
 </p>
